@@ -1,0 +1,114 @@
+
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SIFO</title>
+    <link rel="stylesheet" href="{% static 'general/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'general/css/bootstrap.min.css' %}">
+    <script type="text/javascript" src="{% static 'general/js/jquery-3.3.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'general/js/bootstrap.min.js' %}"></script>
+    <link rel="icon" type="image/png" href="{% static 'general/img/iconoSIFO.ico' %}" />
+    <link href="{% static 'signin.css' %}" rel="stylesheet">
+</head>
+<body class="text-center" style="background-image: url('https://c.pxhere.com/photos/cb/a2/cornfield_corn_field_arable_young_plants_frisch_agriculture_crops-630468.jpg!d'); background-size: cover">
+<div class="container" style="max-width: 1560px; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";>
+        <div class="row centered-form row justify-content-center" style="height: 100vh;">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+            <div>
+                <img class="img-responsive mt-5" src="{%  static 'general/img/logoSIFO.png' %}" alt="" width="200" height="" />
+            </div>
+        	<div class="panel">
+        		<div class="panel-heading" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 5px">
+                    <h5 style="padding: 10px 4px;" class="panel-title">Por favor ingresa los siguientes datos:</h5>
+                </div>
+			 			<div class="panel-body" style="background-color: rgba(255, 255, 255, 0.8); padding: 8px; border-radius: 5px">
+			    		<form role="form">
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+                                        <h6 class="mt-2 float-right">Nombre de usuario:</h6>
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="username" id="id_username" class="form-control input-sm">
+			    					</div>
+			    				</div>
+			    			</div>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+			    					    <div class="form-group">
+                                          <h6 class="mt-2 float-right">Email:</h6>
+			    					    </div>
+			    				    </div>
+			    			    <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+			    				        <input type="email" name="email" id="id_email" class="form-control input-sm">
+                                    </div>
+			    			    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <h6 class="mt-2 float-right">Confirma tu email:</h6>
+                                    </div>
+                                </div>
+			    			    <div class="col-xs-6 col-sm-6 col-md-6">
+			    				    <div class="form-group">
+                                        <input type="email" name="email_confirmation" id="id_email_confirmation" class="form-control input-sm">
+                                    </div>
+			    			    </div>
+                            </div>
+			    			<div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <h6 class="mt-2 float-right">Contraseña:</h6>
+                                    </div>
+                                </div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="password" name="password" id="password" class="form-control input-sm">
+			    					</div>
+			    				</div>
+			    			</div>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <h6 class="mt-2 float-right">Confirma tu contraseña:</h6>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="password" name="password_confirmation" id="id_password_confirmation" class="form-control input-sm">
+			    					</div>
+			    				</div>
+                            </div>
+			    			<input type="submit" value="Registrarse" class="btn btn-info btn-danger">
+
+			    		</form>
+			    	</div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
+
+<!--<footer class="fixed-bottom">
+    <div class="row justify-content-start ">
+        <div class="col">
+            <p> &#8195
+                <a style="color: #ffffff" href="#">Términos y condiciones</a>&#8195
+                <a style="color: #ffffff" href="#">Acerca</a>&#8195
+                <a style="color: #ffffff" href="#">Patrocinadores</a>
+            </p>
+        </div>
+    </div>
+</footer>-->
+</body>
+</html>
+
+
+
